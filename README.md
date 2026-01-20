@@ -8,14 +8,17 @@ I have created diffrent folder for diffrent functionlaity
 
 # 2) Fetched the users api and displayed the data and creted seperate interface for the user fields aslo added search functionlaity based on user fields 
 
-user interface
+user interface (https://jsonplaceholder.typicode.com/users fetched this API) 
+
 <img width="712" height="466" alt="Screenshot from 2026-01-20 18-58-40" src="https://github.com/user-attachments/assets/8fdf10f7-34e6-4923-ac0c-3889565a6702" />
 
 ui images 
+
 without search shows api fetched data 
 <img width="2086" height="1266" alt="Screenshot from 2026-01-20 18-55-15" src="https://github.com/user-attachments/assets/32df94a1-6460-4eae-870e-7a7a22380520" />
 
 after search 
+
 <img width="1972" height="772" alt="Screenshot from 2026-01-20 18-55-42" src="https://github.com/user-attachments/assets/51a6dd0d-2261-4e3d-a397-2ad1a5e50bab" />
 
 
