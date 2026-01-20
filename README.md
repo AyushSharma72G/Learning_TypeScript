@@ -1,73 +1,22 @@
-# React + TypeScript + Vite
+# Learning Ts
+This is a vite+react(Ts) repo which i am using to learn TS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have created diffrent folder for diffrent functionlaity 
 
-Currently, two official plugins are available:
+# 1) Created a basic counter to learn about the basic ts types like "number" and "string" (Counter Folder) 
+<img width="1114" height="298" alt="Screenshot from 2026-01-20 18-56-22" src="https://github.com/user-attachments/assets/e6413b6b-cde6-4970-aebd-1d66adfae460" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 2) Fetched the users api and displayed the data and creted seperate interface for the user fields aslo added search functionlaity based on user fields 
 
-## React Compiler
+user interface
+<img width="712" height="466" alt="Screenshot from 2026-01-20 18-58-40" src="https://github.com/user-attachments/assets/8fdf10f7-34e6-4923-ac0c-3889565a6702" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ui images 
+without search shows api fetched data 
+<img width="2086" height="1266" alt="Screenshot from 2026-01-20 18-55-15" src="https://github.com/user-attachments/assets/32df94a1-6460-4eae-870e-7a7a22380520" />
 
-## Expanding the ESLint configuration
+after search 
+<img width="1972" height="772" alt="Screenshot from 2026-01-20 18-55-42" src="https://github.com/user-attachments/assets/51a6dd0d-2261-4e3d-a397-2ad1a5e50bab" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
